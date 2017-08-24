@@ -1,3 +1,7 @@
+/* Bo Peng
+ * CSS FILE
+ */
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -24,6 +28,25 @@ html, body {
 	/*background-color: #F7F7F7;*/
 }
 
+.pw-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:160px;
+	height:30px;
+	position: fixed;
+	left: 3vw;
+	top:4vh;
+	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);
+}
+
+.pw-box:hover {
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);   
+    -moz-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
 .home-box {
 	display: flex;
 	justify-content: center;
@@ -31,10 +54,6 @@ html, body {
 	width:60px;
 	height:28px;
 	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);
-    -webkit-transition: all 100ms ease-in;
-    -ms-transition: all 100ms ease-in; 
-    -moz-transition: all 100ms ease-in;
-    transition: all 100ms ease-in;
 }
 
 .home-box:hover {
@@ -51,7 +70,6 @@ html, body {
 }
 
 .header {
-	max-width: 960px;
 	margin: 1em auto 1em auto;
 	width:100%;
 	height:60px;
@@ -66,6 +84,29 @@ html, body {
 	font-size: 25px;
 }
 
+.width-limit {
+	max-width:960px;
+}
+
+.scaling {
+    -webkit-transition: all 100ms ease-in;
+    -ms-transition: all 100ms ease-in; 
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /*INDEX
 ------------------------------------------------*/
 .menu {
@@ -78,7 +119,7 @@ html, body {
 }
 
 #index-title {
-	margin-top:15vh;
+	margin-top:17vh;
 	text-align: center;
 	font-size:40px;
 }
@@ -99,6 +140,7 @@ html, body {
     -ms-transform: scale(1.08);   
     -moz-transform: scale(1.08);
     transform: scale(1.08);
+    background: #ddd;
 }
 
 .index-grid-item a {
@@ -112,10 +154,11 @@ html, body {
 	font-size: 1.5em;
 	justify-content: center;
 }
-
+/*
 .menu > div:nth-child(odd) {
 	background: #ddd;
 }
+*/
 
 /*------------------------------------------------
 */
@@ -123,7 +166,6 @@ html, body {
 /* FLEXBOX
 ------------------------------------------------*/
 .box-container {
-	max-width: 960px;
 	margin: 0 auto;
 	/*background-color: #F7f7f7;*/
 }
@@ -140,7 +182,6 @@ html, body {
 .boxes:nth-child(3){background-color:#CEE9FC;}
 
 .fixed-container {
-	max-width: 960px;
 	margin: 40px auto 0 auto;
 	background-color: #F7F7F7;
 	padding: 20px 20px 0 20px;
