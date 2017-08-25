@@ -28,6 +28,15 @@ html, body {
 	/*background-color: #F7F7F7;*/
 }
 
+.link-container {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 85px;
+	z-index: 1;
+	background-color: white;
+}
+
 .pw-box {
 	display: flex;
 	justify-content: center;
@@ -36,7 +45,7 @@ html, body {
 	height:30px;
 	position: fixed;
 	left: 3vw;
-	top:4vh;
+	top: 30px;
 	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);
 }
 
@@ -95,18 +104,6 @@ html, body {
     transition: all 100ms ease-in;
 }
 
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-50%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 /*INDEX
 ------------------------------------------------*/
 .menu {
@@ -119,7 +116,7 @@ html, body {
 }
 
 #index-title {
-	margin-top:17vh;
+	margin-top: 130px;
 	text-align: center;
 	font-size:40px;
 }
