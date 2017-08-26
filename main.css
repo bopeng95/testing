@@ -46,7 +46,8 @@ html, body {
 	position: fixed;
 	left: 3vw;
 	top: 30px;
-	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);
+	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 
+	0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);
 }
 
 .pw-box:hover {
@@ -62,7 +63,8 @@ html, body {
 	align-items: center;
 	width:60px;
 	height:28px;
-	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);
+	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 
+	0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);
 }
 
 .home-box:hover {
@@ -137,7 +139,7 @@ html, body {
     -ms-transform: scale(1.08);   
     -moz-transform: scale(1.08);
     transform: scale(1.08);
-    background: #ddd;
+    background: #FECABD;
 }
 
 .index-grid-item a {
@@ -146,7 +148,7 @@ html, body {
 }
 
 .menu > div {
-	background: #eee;
+	background: #FFE9E6;
 	padding: 1em;
 	font-size: 1.5em;
 	justify-content: center;

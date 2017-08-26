@@ -1,0 +1,53 @@
+.scalings {
+  -webkit-transition: scalings 100ms ease-in;
+  -ms-transition: scalings 100ms ease-in; 
+  -moz-transition: scalings 100ms ease-in;
+  transition: scalings 100ms ease-in;
+}
+
+
+@keyframes scalings {
+  0% {
+    transform: scale(1);
+
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@-moz-keyframes scalings {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@-webkit-keyframes scalings {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@-o-keyframes scalings {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@-ms-keyframes scalings {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
