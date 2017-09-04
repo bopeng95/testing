@@ -1,6 +1,7 @@
 /* Bo Peng
  * CSS FILE
  */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400');
 
 html, body {
 	margin: 0;
@@ -15,6 +16,10 @@ html, body {
 	font-family:'Open Sans', Sans-Serif;
 }
 
+.btn {
+	padding:5px;
+}
+
 .container {
 	margin: 0 auto;
 	width:auto;
@@ -22,7 +27,7 @@ html, body {
 }
 
 .container-fluid {
-	margin: 0 30px;
+	margin: 0 20px;
 	width:auto;
 	padding: 20px;
 	/*background-color: #F7F7F7;*/
@@ -46,8 +51,6 @@ html, body {
 	position: fixed;
 	left: 3vw;
 	top: 30px;
-	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 
-	0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);
 }
 
 .pw-box:hover {
@@ -57,14 +60,17 @@ html, body {
     transform: scale(1.08);
 }
 
+.shadow {
+	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 
+	0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);
+}
+
 .home-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width:60px;
 	height:28px;
-	box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2), 
-	0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.19);
 }
 
 .home-box:hover {
@@ -81,7 +87,7 @@ html, body {
 }
 
 .header {
-	margin: 1em auto 1em auto;
+	margin: 1em auto 0.5em auto;
 	width:100%;
 	height:60px;
 	background: #F7F7F7;
@@ -89,14 +95,26 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size:25px;
 }
 
-.page-titles {
-	font-size: 25px;
+.subject {
+	width:100%;
+	height:80px;
+	font-size:23px;
+}
+
+.new-subject-line {
+	border-top: 1px solid gray;
 }
 
 .width-limit {
 	max-width:960px;
+}
+
+.center {
+	margin:0 auto;
+	text-align: center;
 }
 
 .scaling {
@@ -128,10 +146,6 @@ html, body {
 	align-items: center;
 	display: flex;
 	margin: 0 15px 0 15px;
-    -webkit-transition: all 100ms ease-in;
-    -ms-transition: all 100ms ease-in; 
-    -moz-transition: all 100ms ease-in;
-    transition: all 100ms ease-in;
 }
 
 .index-grid-item:hover {
@@ -203,6 +217,37 @@ html, body {
 }
 /*------------------------------------------------*/
 
+/*API PAGE
+------------------------------------------------*/
+.instagram {
+	margin:0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap:.33em;
+	padding:0;
+	/*grid-auto-rows: minmax(100px, auto);*/
+}
+
+.insta-content img {
+    width: 100%;
+    height: auto;
+    width: auto\9;
+}
+.insta-content img:hover {
+	opacity: 0.8;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);   
+    -moz-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.heart {
+	display: none;
+}
+
+
+
+/*------------------------------------------------*/
+
 /*UP ARROW
 ------------------------------------------------*/
  #arrow {
@@ -227,7 +272,18 @@ html, body {
 /*MEDIA
 ------------------------------------------------*/
 @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+	/*API PAGE
+	 ------------------------------------*/
+	.instagram {
+		grid-column-gap:0;
+		grid-gap:1.5em;
+	}
+	.heart {
+		display: inherit;
+	}
+	/*------------------------------------*/
+}
 @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 	/*INDEX
 	-------------------------------------*/
@@ -242,9 +298,8 @@ html, body {
 	.index-grid-item {
 		margin: 0;
 	}
-	/*------------------------------------
-	*/
-	}
+	/*------------------------------------*/
+}
 @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	/*FLEXBOX
 	 ------------------------------------*/
@@ -255,9 +310,15 @@ html, body {
 	.boxes {
 		margin-bottom:0;
 	}
-	/*------------------------------------
-	 */
+	/*------------------------------------*/
+	/*API PAGE
+	 ------------------------------------*/
+	.instagram {
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap:2em;
 	}
+	/*------------------------------------*/
+}
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
 	/*INDEX
 	-------------------------------------*/

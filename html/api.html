@@ -11,15 +11,16 @@
 
         <!-- CSS -->
         <link href="../main.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/animate.css">
 
         <!--JAVASCRIPT-->
-        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-        <script src="main.js" type="text/javascript"></script>
-        <script src="app.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../main.js" type="text/javascript"></script>
+        <script src="../app.js" type="text/javascript"></script>
 
         <!--FAVICON-->
-        <link rel="icon" type="img/png" href="img/favicon.png">
+        <link rel="icon" type="png" href="../img/favicon.png">
 
     </head>
 
@@ -28,15 +29,23 @@
 
         <div class = "container-fluid">
 
-            <section class = "home-box">
+            <section class = "home-box scaling shadow">
                 <a href = "../index.html" class = "home-button alpha-font">Home</a>
             </section>
             <section class = "header width-limit">
-                <p class = "alpha-font page-titles">API</p>
+                <p class = "alpha-font">API</p>
             </section>
 
-            <div class = "width-limit"> 
+            <!--INSTAGRAM API-->
+            <div class = "subject width-limit center beta-font">
+                <p class = "alpha-font" style="margin-bottom: -10px;">Instagram<br></p>
+                <p style= "font-size:18px;">Enter Tag: <input id="hashtag"></input></p>
+            </div>
+            <div class = "instagram width-limit center"></div>
 
+            <!--API-->  
+            <div class = "width-limit center subject new-subject-line" style="margin-top:20px;">
+                <p class = "alpha-font">more soon...</p>
             </div>
 
         </div>
